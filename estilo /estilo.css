@@ -4,8 +4,10 @@
   font-size: 60px;
 }
 .cabecalho{
-  width:100%;
-  height:550px;
+    width: 100%; /* Garante que a largura da imagem se ajuste ao contêiner pai */
+    height: auto; /* Mantém a proporção original da imagem */
+    max-width: 100%; /* Evita que a imagem se estenda além de seu tamanho original */
+    display: block; /* Remove espaços extras abaixo da imagem */
 }
 nav{
   position: absolute;
