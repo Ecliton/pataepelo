@@ -2,16 +2,13 @@
   margin:0px;
   padding:0px;
 }
-
-header{
-  background-image:url("/imagens/img-cabecalho02.jpg");
-  background-size:cover;
-  background-position:center;
-  background-repeat: no-repeat;
+.cabeca{
+  position:absolute;
  width:100%;
  height:200px;
 }
 a{
+  position:relative;
   background-color:black;
   padding:5px;
   border-radius:5px;
