@@ -17,12 +17,15 @@ function handleBackButton() {
 }
 
 var clicado=false;
+var cont=document.getElementById("conteudo")
 
 document.getElementById("m1").addEventListener('click',function(){
   if(clicado){
     this.style.backgroundColor="black"
+    cont.style.display="none"
   }else{
     this.style.backgroundColor="green"
+    cont.style.display="block"
   }
   clicado=!clicado
 });
