@@ -1,4 +1,3 @@
-// navigation.js
 
 window.onload = function() {
     if (performance.navigation.type === 2) {
@@ -16,3 +15,16 @@ function handleBackButton() {
         window.location.replace("index.html");
     });
 }
+
+var clicado=false;
+
+document.getElementById("m1").addEventListener('click',function(){
+  if(clicado){
+    this.style.backgroundColor="black"
+  }else{
+    this.style.backgroundColor="green"
+  }
+  clicado=!clicado
+});
+
+
