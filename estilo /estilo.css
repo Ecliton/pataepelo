@@ -4,17 +4,16 @@
 }
 /*CABEÇALHO*/
 .cabeca{
-  position:absolute;
+ position:absolute;
  width:100%;
  height:200px;
- font-family:arial, sans-serif;
 }
 /*MENU DE NAVEGAÇÃO*/
 
 .menu{
   position:relative;
   background-color:black;
-  width:50px;
+  width:60px;
   height:25px;
   padding:5px;
   border-radius:5px;
@@ -22,6 +21,7 @@
   left:10px;
   
   font-size:20px;
+  font-family: serif;
   font-weight:bold;
   color:#78D64B;
 }
@@ -37,6 +37,26 @@ a{
   text-decoration:none;
   color:#78d64b;
 }
+/*RELÓGIO*/
+.caixa{
+  position:relative;
+  float:right;
+  background-color:black;
+  width:60px;
+  height:25px;
+  padding:5px;
+  border-radius:5px;
+  top:-25px;
+  right:10px;
+  
+  text-align:center;
+  font-weight:bold;
+  font-family:serif;
+  color:#78d64b;
+  font-size:20px;
+}
+/*PROMOÇÃO*/
+
 .subt{
   position:relative;
   display:flex;
@@ -73,17 +93,13 @@ a{
   width:80%;
   height:100px;
   border-radius: 10px;
-}
-
-/*SECTIONS INDIVIDUAL*/
-
-#a1{
   overflow: hidden;
-  margin:10px 0px 35px 15px;
   height:150px;
 }
 
-.txta1,.imga1{
+/*IMAGENS GERAL*/
+
+.txta,.imga{
   float: left;
   
   font-size:20px;
@@ -92,9 +108,18 @@ a{
   box-sizing:border-box;
   padding:10px;
 }
-.imga1{
+.imga{
   width:110px;
 }
 
+/*SECTIONS INDIVIDUAIS*/
 
-
+#a1{
+  margin:20px auto;
+}
+#a2{
+  margin:20px auto;
+}
+#a3{
+  margin:20px auto;
+}

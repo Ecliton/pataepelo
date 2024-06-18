@@ -30,4 +30,14 @@ document.getElementById("m1").addEventListener('click',function(){
   clicado=!clicado
 });
 
-
+function relogio(){
+  const now= new Date()
+  const hora=String(now.getHours()).padStart(2,'0')
+  const min=String(now.getMinutes()).padStart(2,'0')
+  const sec=String(now.getSeconds()).padStart(2,'0')
+  const hr=`${hora}:${min}`
+  
+  document.getElementById("hora").textContent=hr
+}
+relogio()
+setInterval(relógio, 1000)
