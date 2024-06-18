@@ -18,13 +18,16 @@ function handleBackButton() {
 
 var clicado=false;
 var cont=document.getElementById("conteudo")
+/*var cont1=document.getElementById("conteudo1")*/
 
 document.getElementById("m1").addEventListener('click',function(){
   if(clicado){
     this.style.backgroundColor="black"
+    this.style.color="#78D64B"
     cont.style.display="none"
   }else{
-    this.style.backgroundColor="green"
+    this.style.backgroundColor="#78D64B"
+    this.style.color="black"
     cont.style.display="block"
   }
   clicado=!clicado
@@ -40,4 +43,4 @@ function relogio(){
   document.getElementById("hora").textContent=hr
 }
 relogio()
-setInterval(relógio, 1000)
+setInterval(relogio, 1000)
