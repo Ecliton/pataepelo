@@ -15,23 +15,12 @@ function handleBackButton() {
         window.location.replace("index.html");
     });
 }
-
-var clicado=false;
-var cont=document.getElementById("conteudo")
-/*var cont1=document.getElementById("conteudo1")*/
-
-document.getElementById("m1").addEventListener('click',function(){
-  if(clicado){
-    this.style.backgroundColor="black"
-    this.style.color="#78D64B"
-    cont.style.display="none"
-  }else{
-    this.style.backgroundColor="#78D64B"
-    this.style.color="black"
-    cont.style.display="block"
-  }
-  clicado=!clicado
-});
+document.getElementById("m1").addEventListener('click', function(){
+  var content=document.getElementById("conteudo")
+  
+  this.classList.toggle('transformed')
+  content.classList.toggle('transformed')
+})
 
 function relogio(){
   const now= new Date()
